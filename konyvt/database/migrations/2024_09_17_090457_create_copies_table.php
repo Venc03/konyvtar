@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\copies;
+use App\Models\Copies;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -24,6 +24,7 @@ return new class extends Migration
         Copies::create(['book_id'=> 2, 'user_id'=> 2]);
         Copies::create(['book_id'=> 2, 'user_id'=> 3]);
         Copies::create(['book_id'=> 3, 'user_id'=> 1]);
+        $copies = Copies::factory()->count(10)->create();
     }
 
     /**

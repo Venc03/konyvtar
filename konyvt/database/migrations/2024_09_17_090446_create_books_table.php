@@ -16,12 +16,14 @@ return new class extends Migration
             $table->id('book_id');
             $table->string('author');
             $table->string('title');
+            $table->integer('pieces');
             $table->timestamps();
         });
         
-        Books::create(['author'=>'Shakespear', 'title'=> 'The shaking of a spear']);
-        Books::create(['author'=>'Roberto', 'title'=> 'Banananana']);
-        Books::create(['author'=>'Bradford', 'title'=> 'Making of a man']);
+        Books::create(['author'=>'Shakespear', 'title'=> 'The shaking of a spear', 'pieces' => 25]);
+        Books::create(['author'=>'Roberto', 'title'=> 'Banananana', 'pieces' => 30]);
+        Books::create(['author'=>'Bradford', 'title'=> 'Making of a man', 'pieces' => 50]);
+        $book = Books::factory()->count(7)->create();
     }
 
     /**
