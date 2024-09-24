@@ -24,7 +24,7 @@ return new class extends Migration
         Copies::create(['book_id'=> 2, 'user_id'=> 2]);
         Copies::create(['book_id'=> 2, 'user_id'=> 3]);
         Copies::create(['book_id'=> 3, 'user_id'=> 1]);
-        $copies = Copies::factory()->count(10)->create();
+        Copies::factory()->count(10)->create();
     }
 
     /**

@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Books;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,8 +19,8 @@ class CopiesFactory extends Factory
     public function definition(): array
     {
         return [
-            'book_id'=> fake()->numberBetween(1, 10),
-            'user_id'=> fake()->numberBetween(1, 15)
+            'book_id'=> Books::all() -> random()->book_id,
+            'user_id'=> User::all() -> random()->id
         ];
     }
 }

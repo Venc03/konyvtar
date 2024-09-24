@@ -41,7 +41,7 @@ return new class extends Migration
         User::create(['name'=>'Vali', 'email'=> 'vali@vali.hu']);
         User::create(['name'=>'Tomi', 'email'=> 'tomi@tomi.hu']);
         User::create(['name'=>'Bali', 'email'=> 'bali@bali.hu']);
-        $user = User::factory()->count(10)->create();
+        User::factory()->count(10)->create();
     }
 
     /**
