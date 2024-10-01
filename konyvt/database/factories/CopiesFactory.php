@@ -20,7 +20,7 @@ class CopiesFactory extends Factory
     {
         return [
             'book_id'=> Books::all() -> random()->book_id,
-            'hardcover'=> rand(0, 2),
+            'hardcover'=> rand(0, 1),
             'publicantion'=> rand(1980, 2020),
             'status'=> rand(0, 2)
         ];
