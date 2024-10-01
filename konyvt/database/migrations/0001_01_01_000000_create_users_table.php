@@ -16,6 +16,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('password');
+            $table->boolean('permission')->default(1);
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
@@ -36,11 +38,11 @@ return new class extends Migration
             $table->integer('last_activity')->index();
         });
 
-        User::create(['name'=>'Dani', 'email'=> 'dani@dani.hu']);
-        User::create(['name'=>'Geri', 'email'=> 'geri@geri.hu']);
-        User::create(['name'=>'Vali', 'email'=> 'vali@vali.hu']);
-        User::create(['name'=>'Tomi', 'email'=> 'tomi@tomi.hu']);
-        User::create(['name'=>'Bali', 'email'=> 'bali@bali.hu']);
+        User::create(['name'=>'Dani', 'email'=> 'dani@dani.hu', 'password'=> 'sada', 'permission'=> 0]);
+        User::create(['name'=>'Geri', 'email'=> 'geri@geri.hu', 'password'=> 'adsfa']);
+        User::create(['name'=>'Vali', 'email'=> 'vali@vali.hu', 'password'=> '231df12']);
+        User::create(['name'=>'Tomi', 'email'=> 'tomi@tomi.hu', 'password'=> 'vwe123']);
+        User::create(['name'=>'Bali', 'email'=> 'bali@bali.hu', 'password'=> 'bsgf34']);
         User::factory()->count(10)->create();
     }
 

@@ -15,15 +15,17 @@ return new class extends Migration
         Schema::create('copies', function (Blueprint $table) {
             $table->id('copy_id');
             $table->foreignId('book_id')->references('book_id')->on('books');
-            $table->foreignId('user_id')->references('id')->on('users');
+            $table->tinyInteger('hardcover')->default(0);
+            $table->year('publicantion');
+            $table->integer('status');
             $table->timestamps();
         });
 
-        Copies::create(['book_id'=> 1, 'user_id'=> 1]);
-        Copies::create(['book_id'=> 1, 'user_id'=> 2]);
-        Copies::create(['book_id'=> 2, 'user_id'=> 2]);
-        Copies::create(['book_id'=> 2, 'user_id'=> 3]);
-        Copies::create(['book_id'=> 3, 'user_id'=> 1]);
+        Copies::create(['book_id'=> 1, 'hardover'=> 0, 'publicantion'=> '1990', 'status'=> 0]);
+        Copies::create(['book_id'=> 1, 'hardover'=> 1, 'publicantion'=> '1998', 'status'=> 1]);
+        Copies::create(['book_id'=> 2, 'hardover'=> 1, 'publicantion'=> '2003', 'status'=> 0]);
+        Copies::create(['book_id'=> 2, 'hardover'=> 0, 'publicantion'=> '2020', 'status'=> 0]);
+        Copies::create(['book_id'=> 3, 'hardover'=> 0, 'publicantion'=> '2002', 'status'=> 1]);
         Copies::factory()->count(10)->create();
     }
 

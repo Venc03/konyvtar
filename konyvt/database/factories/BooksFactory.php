@@ -19,7 +19,6 @@ class BooksFactory extends Factory
         return [
             'author' => fake()->name(),
             'title' => fake()->sentence(),
-            'pieces' => fake()->numberBetween(0, 100)
         ];
     }
 }

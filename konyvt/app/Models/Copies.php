@@ -9,8 +9,13 @@ class Copies extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'copy_id';
+
     protected $fillable = [
         'book_id',
         'user_id',
+        'hardcover',
+        'publicantion',
+        'status'
     ];
 }
