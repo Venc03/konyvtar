@@ -1,0 +1,326 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Konyvtar",
+    "collectionId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+    "dateExported": "2024-10-15T08:04:03.786Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "392d40cc-3e5e-4fa6-a3ea-1de0dbaa2688",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "UserGet",
+            "url": "user",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2024-09-24T09:31:11.922Z",
+            "modified": "2024-09-24T09:37:22.864Z",
+            "headers": []
+        },
+        {
+            "_id": "1bdb1c3f-9619-4f8f-8fa2-712fb477000f",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "UserPost",
+            "url": "user?name&email",
+            "method": "POST",
+            "sortNum": 6250,
+            "created": "2024-09-24T09:31:03.346Z",
+            "modified": "2024-09-24T09:41:44.717Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "",
+                    "isPath": false
+                },
+                {
+                    "name": "email",
+                    "value": "",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "af6a34ed-004f-4a19-bc07-2bf283024bbd",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "UserPut",
+            "url": "user/1?name=Deni&email=deni@deni.hu",
+            "method": "PUT",
+            "sortNum": 7500,
+            "created": "2024-09-24T09:34:01.674Z",
+            "modified": "2024-09-24T09:39:30.934Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "Deni",
+                    "isPath": false
+                },
+                {
+                    "name": "email",
+                    "value": "deni@deni.hu",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "1863e891-9d40-4463-b2f8-ef65e19a3105",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "UserDelete",
+            "url": "user/5",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-09-24T09:36:10.377Z",
+            "modified": "2024-09-24T10:11:23.376Z",
+            "headers": []
+        },
+        {
+            "_id": "0f49f1cd-7885-487e-ad04-77e6842e2726",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "BookGet",
+            "url": "book",
+            "method": "GET",
+            "sortNum": 45000,
+            "created": "2024-10-15T07:32:51.936Z",
+            "modified": "2024-10-15T07:32:51.936Z",
+            "headers": []
+        },
+        {
+            "_id": "c8acba91-b9e1-4066-ac8f-8d718e4e6538",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "BookPost",
+            "url": "book?author=Thomas James&title=The Thomas boy yes&pieces=30",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-10-15T07:32:49.930Z",
+            "modified": "2024-10-15T07:32:49.930Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "author",
+                    "value": "Thomas James",
+                    "isPath": false
+                },
+                {
+                    "name": "title",
+                    "value": "The Thomas boy yes",
+                    "isPath": false
+                },
+                {
+                    "name": "pieces",
+                    "value": "30",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "ed00f9f4-08ec-492f-baf5-dcdc0f324405",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "BookPut",
+            "url": "book/5?author=James&title=Jamestown&pieces=10",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-10-15T07:32:53.216Z",
+            "modified": "2024-10-15T07:32:53.216Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "author",
+                    "value": "James",
+                    "isPath": false
+                },
+                {
+                    "name": "title",
+                    "value": "Jamestown",
+                    "isPath": false
+                },
+                {
+                    "name": "pieces",
+                    "value": "10",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "0321934b-2754-48ba-996f-1377cfa82aeb",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "BookDelete",
+            "url": "book/5",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-10-15T07:32:54.520Z",
+            "modified": "2024-10-15T07:32:54.520Z",
+            "headers": []
+        },
+        {
+            "_id": "cbd038c5-3f4b-4626-8a3e-598565a2babe",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "CopiesGet",
+            "url": "copies",
+            "method": "GET",
+            "sortNum": 85000,
+            "created": "2024-10-15T07:33:04.912Z",
+            "modified": "2024-10-15T07:33:04.912Z",
+            "headers": []
+        },
+        {
+            "_id": "35e11b5d-bcc9-4ade-9feb-902c97beb524",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "CopiesPost",
+            "url": "copies/?book_id=2&user_id=3",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-10-15T07:33:03.704Z",
+            "modified": "2024-10-15T07:33:03.704Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "book_id",
+                    "value": "2",
+                    "isPath": false
+                },
+                {
+                    "name": "user_id",
+                    "value": "3",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "c4f01420-6bbb-4398-9cf2-fbd9062091b3",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "CopiesPut",
+            "url": "copies/5?book_id=3&user_id=5",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-10-15T07:33:06.240Z",
+            "modified": "2024-10-15T07:33:06.240Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "book_id",
+                    "value": "3",
+                    "isPath": false
+                },
+                {
+                    "name": "user_id",
+                    "value": "5",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "a223596c-786f-4e80-8648-8e188076690e",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "CopiesDelete",
+            "url": "copies/5",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2024-10-15T07:33:07.753Z",
+            "modified": "2024-10-15T07:33:07.753Z",
+            "headers": []
+        },
+        {
+            "_id": "8b5c7b3a-ac90-4660-9897-18adbb25c0db",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "LendingGet",
+            "url": "lending",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-10-15T07:37:10.205Z",
+            "modified": "2024-10-15T07:39:29.315Z",
+            "headers": []
+        },
+        {
+            "_id": "c300ea3c-bc8e-45a9-ad7d-9807615a4394",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "LendingPost",
+            "url": "copies/?book_id=2&user_id=3",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2024-10-15T07:37:12.212Z",
+            "modified": "2024-10-15T07:37:12.212Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "book_id",
+                    "value": "2",
+                    "isPath": false
+                },
+                {
+                    "name": "user_id",
+                    "value": "3",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "c523dfee-3773-4aff-b118-0e534631d792",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "LendingGetOne",
+            "url": "lending/1/1/2020",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-10-15T07:38:58.958Z",
+            "modified": "2024-10-15T07:40:04.445Z",
+            "headers": []
+        },
+        {
+            "_id": "8d1efc13-3ce3-41aa-aa1b-48430196282f",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "LendingPut",
+            "url": "lending/1/1/2020?end=2024-02-02&message=3",
+            "method": "PATCH",
+            "sortNum": 160000,
+            "created": "2024-10-15T07:37:14.205Z",
+            "modified": "2024-10-15T07:42:58.726Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "end",
+                    "value": "2024-02-02",
+                    "isPath": false
+                },
+                {
+                    "name": "message",
+                    "value": "3",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "9edf1f3b-e7ef-4dd3-a16b-8f1d9e2ee2c7",
+            "colId": "9255f9f5-05d6-4561-a079-5e28aea28036",
+            "containerId": "",
+            "name": "LendingDelete",
+            "url": "lending/1/2/2022",
+            "method": "DELETE",
+            "sortNum": 170000,
+            "created": "2024-10-15T07:37:16.188Z",
+            "modified": "2024-10-15T07:42:19.009Z",
+            "headers": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://localhost:8000/api/"
+        }
+    },
+    "ref": "jNHL92nxVnRq7XL5bMBXGgDUSzSTcMWXJ6Yywoz9oMyGZ3mH6T5xW-1KKeiVAiafWF-mAKSuelBdMy2BBvbV9w"
+}

@@ -26,7 +26,6 @@ return new class extends Migration
         Copies::create(['book_id'=> 2, 'hardover'=> 1, 'publicantion'=> '2003', 'status'=> 0]);
         Copies::create(['book_id'=> 2, 'hardover'=> 0, 'publicantion'=> '2020', 'status'=> 0]);
         Copies::create(['book_id'=> 3, 'hardover'=> 0, 'publicantion'=> '2002', 'status'=> 1]);
-        Copies::factory()->count(10)->create();
     }
 
     /**

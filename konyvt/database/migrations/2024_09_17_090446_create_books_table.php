@@ -22,7 +22,6 @@ return new class extends Migration
         Books::create(['author'=>'Shakespear', 'title'=> 'The shaking of a spear', 'pieces' => 25]);
         Books::create(['author'=>'Roberto', 'title'=> 'Banananana', 'pieces' => 30]);
         Books::create(['author'=>'Bradford', 'title'=> 'Making of a man', 'pieces' => 50]);
-        Books::factory()->count(7)->create();
     }
 
     /**

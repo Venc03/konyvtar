@@ -16,15 +16,16 @@ return new class extends Migration
             $table->foreignId('user_id')->references('id')->on('users');
             $table->foreignId('copy_id')->references('copy_id')->on('copies');
             $table->year('start');
+            $table->date('end')->nullable();
+            $table->smallInteger('message');
             $table->timestamps();
         });
 
-        Lending::create(['user_id'=> 1, 'copy_id'=> 1, 'start'=> 2020]);
-        Lending::create(['user_id'=> 1, 'copy_id'=> 2, 'start'=> 2022]);
-        Lending::create(['user_id'=> 2, 'copy_id'=> 2, 'start'=> 2023]);
-        Lending::create(['user_id'=> 2, 'copy_id'=> 3, 'start'=> 2019]);
-        Lending::create(['user_id'=> 3, 'copy_id'=> 1, 'start'=> 2015]);
-        Lending::factory()->count(10)->create();
+        Lending::create(['user_id'=> 1, 'copy_id'=> 1, 'start'=> 2020, 'end' => '2020-10-12', 'message' => 1]);
+        Lending::create(['user_id'=> 1, 'copy_id'=> 2, 'start'=> 2022, 'end' => '2020-05-16', 'message' => 0]);
+        Lending::create(['user_id'=> 2, 'copy_id'=> 2, 'start'=> 2023, 'end' => '2021-07-22', 'message' => 2]);
+        Lending::create(['user_id'=> 2, 'copy_id'=> 3, 'start'=> 2019, 'end' => '2022-02-02', 'message' => 0]);
+        Lending::create(['user_id'=> 3, 'copy_id'=> 1, 'start'=> 2015, 'end' => '2023-12-30', 'message' => 3]);
     }
 
     /**

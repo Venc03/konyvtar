@@ -43,7 +43,6 @@ return new class extends Migration
         User::create(['name'=>'Vali', 'email'=> 'vali@vali.hu', 'password'=> '231df12']);
         User::create(['name'=>'Tomi', 'email'=> 'tomi@tomi.hu', 'password'=> 'vwe123']);
         User::create(['name'=>'Bali', 'email'=> 'bali@bali.hu', 'password'=> 'bsgf34']);
-        User::factory()->count(10)->create();
     }
 
     /**
