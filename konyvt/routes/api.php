@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\BooksController;
 use App\Http\Controllers\CopiesController;
+use App\Http\Controllers\FileController;
 use App\Http\Controllers\LendingController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -33,3 +35,11 @@ Route::get('/lending/{user_id}/{copy_id}/{start}', [LendingController::class, 's
 Route::post('/lending', [LendingController::class, 'store']);
 Route::patch('/lending/{user_id}/{copy_id}/{start}', [LendingController::class, 'update']);
 Route::delete('/lending/{user_id}/{copy_id}/{start}', [LendingController::class, 'destroy']);
+
+//MAIL
+Route::get('send_mail', [MailController::class, 'index']);
+
+//FILEUPLOAD
+Route::get('file-upload', [FileController::class, 'index']);
+Route::post('file-upload', [FileController::class, 'store'])->name('file.store');
+
